@@ -3,5 +3,10 @@
     <p>{{opisNaslova}}</p>
     <p>{{numVariable}}</p>
 
-    <button (click)="foo()">TEST</button>
+    <button (click)="foo()">TEST</button><br>
+
+    <img [ngStyle]="{width: imgWidth + 'px'}" src="assets\nectarine.jpg" alt="nectarine picture"><br>
+
+    <input [(ngModel)]="ourInput" type="text"><br>
+    <p>{{ourInput}}</p>
 </div>

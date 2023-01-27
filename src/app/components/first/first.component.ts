@@ -9,6 +9,8 @@ export class FirstComponent {
   title: string = 'firstApp';
   opisNaslova = 'Ja sluzim kao test -.-';
   numVariable: number = 7;
+  imgWidth: number = 100;
+  ourInput = 'someText';
 
   constructor() {
     setTimeout(() => {
@@ -20,13 +22,16 @@ export class FirstComponent {
     // setInterval(()=>{
     //   this.numVariable+=1;
     // },250);
+
+    setInterval(()=>{
+      this.imgWidth+=1;
+    },250);
   }
 
   foo() {
     //console.log("foo");
-    this.numVariable+=1;
+    this.numVariable += 1;
   }
-
 
 
 }
